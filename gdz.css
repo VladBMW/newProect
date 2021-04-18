@@ -109,6 +109,9 @@ nav{
 .percent{
     margin-left: 30px;
 }
+.carousel-indicators{
+    margin-top: 50px;
+}
 .border1{
     width: 335px;
     border-top: solid 3px #10c9c3;
@@ -199,26 +202,44 @@ nav{
     width: 100%;
     height: 300px;
     display: inline-block;
+    position: relative;
     
   
 }
 .cell-dark{
     background-color: #838383 ;
 }
-.cell:hover{
-    
-    /* background-color: #000000 !important; */
-    opacity: 0.9;
+
+.cell::after{
     
    
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrvCobXFGrSMsd7ayKREv4-hzMlzUKood-6GeMTCz-LnDZRMjJMPxwI7aN1Vv3In1nodQ&usqp=CAU") no-repeat #000000 ;
+    opacity: 0.8;
+    display: none;
     
+    content: "";
+   position: absolute;
+   z-index: 100;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: url('https://api.iconify.design/akar-icons:eye-open.svg?color=%23fff&width=50px') no-repeat center center;
+   background-color: #000000;
+   
+  
+   vertical-align: -0.125em;
+
+
+   
    
 
   
    
     
     
+}
+.cell:hover::after{
+    display: block;
 }
 
 
@@ -349,12 +370,44 @@ video::-webkit-media-controls {
     margin-top: 0;
     display: block;
 }
+
 .service{
     padding-top: 150px;
 }
 .testimonials{
-    height: 500px;
+    height: auto;
+    
+}
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    display: none !important;
+}
+.carousel-indicators .dis{
+    width: 10px !important;
+    height: 10px!important ;
+    border-radius: 50% !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    margin-top: 3px !important;
+}
+.carousel-indicators .active{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    margin-top: 0 !important;
+   
+}
+
+.www{
     background-color: #10c9c3;
+    height: 500px;
+}
+.sss{
+    background-color: #f80fb2;
+    height: 500px;
+}
+.qqq{
+    background-color: #12ac12;
+    height: 500px;
 }
 .title-of-leaflet{
     line-height:36px;
