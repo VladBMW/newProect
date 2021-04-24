@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+    
+}
+html{
+    overflow-x:hidden;
 }
 header{
    background-image: url("imgGDZ/macbook-mockups20.jpg");
@@ -545,17 +549,42 @@ margin-bottom: 0;
 .forHome{
     height: 900px;
 }
-.cell2:hover{
-    
-    
-    opacity: 0.9;
+
+.cell2::after{
     
    
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrvCobXFGrSMsd7ayKREv4-hzMlzUKood-6GeMTCz-LnDZRMjJMPxwI7aN1Vv3In1nodQ&usqp=CAU") no-repeat #10c9c3 ;
+    opacity: 0.7;
+    display: none;
+    
+    content: "";
+   position: absolute;
+   z-index: 100;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: url('https://api.iconify.design/akar-icons:eye-open.svg?color=%23fff&width=50px') no-repeat center center;
+   background-color: #10c9c3;
+   
+  
+   vertical-align: -0.125em;
+
+
+   
+   
+
+  
+   
+    
+    
+}
+.cell2:hover::after{
+    display: block;
 }
 .home{
     color:  #10c9c3;
 }
+
 .about{
     height:325px;
 }
