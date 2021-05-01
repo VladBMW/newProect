@@ -1106,6 +1106,37 @@ margin-bottom: 0;
 
     }
     @media  (max-width: 575.98px) { 
+        .nav {
+            display: none !important;
+        }
+       
+        .dropdown{
+            display: block !important;
+           
+        }
+        
+        .btn-secondary {
+        
+         background-color:unset !important; 
+         border: unset !important;
+         
+     }
+     .menu-of-header{
+         border-bottom: 3px solid #999999 !important; 
+         width: 40px;
+         margin-top: 7px;
+ 
+     }
+     .btn-secondary:hover .menu-of-header{
+         border-bottom: 3px solid #10c9c3 !important; 
+         
+     }
+     .btn-secondary:focus{
+         box-shadow: none !important;
+     }
+        .navigation{
+            padding-top: 30px;
+        }
         .about-for-about {
             height: 450px;
         }   
@@ -1337,7 +1368,7 @@ margin-bottom: 0;
         margin-right: 0;
     }
     .lorem-text ,  .main-about {
-        text-shadow: 0px -3px 0px #fff;
+        text-shadow: 0px -1.8px 0px #fff;
         font-size: 18px;
     }
     .btn-banner{
