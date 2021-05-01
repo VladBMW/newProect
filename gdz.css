@@ -1,7 +1,10 @@
 *{
     box-sizing: border-box;
+
     
 }
+
+
 html{
     overflow-x:hidden;
 }
@@ -10,11 +13,16 @@ header{
     height: 670px;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 nav{
     float: right;
 }
 /* kkkk */
+textarea {
+   
+    resize: none !important; /* Запрещаем изменять размер */
+   } 
 
 
 .nav{
@@ -29,9 +37,12 @@ nav{
 }
 .nav:hover{
     color: #10c9c3;
+    
 }
 .Mainlogo{
     margin-top: 40px;
+  
+    
 }
 .main-text{
     font-family: 'Montserrat', sans-serif;
@@ -177,6 +188,7 @@ nav{
 .numbers{
     height: 240px;
     background-color: #10c9c3;
+    position: relative;
 }
 .icon{
     float: left;
@@ -210,6 +222,9 @@ nav{
     position: relative;
     
   
+}
+.dropdown{
+    display: none !important;
 }
 .cell-dark{
     background-color: #838383 ;
@@ -283,6 +298,11 @@ nav{
     margin-top: 10%;
     
 }
+.load:hover{
+   line-height: 30px !important;
+   color: black;
+   text-decoration: underline black;
+}
 .product7{
     width:50%;
   
@@ -297,6 +317,9 @@ nav{
     
     margin-top: 10%;
     
+}
+.inpCon{
+    width: 48%  !important;
 }
 .load{
     line-height:auto;
@@ -512,6 +535,7 @@ video::-webkit-media-controls {
 footer{
     height: 285px;
     background-color: #141414;
+    padding-bottom: 50px;
 }
 
 .title-of-footer{
@@ -608,30 +632,43 @@ margin-bottom: 0;
  }
  /* about */
 
+ .AboutME{
+     background-color: #fff;
+ }
+ .int{
+     padding-right: 0 !important;
+ }
+
  .woman{
-     height: 350px;
-     position: relative;
+     height:auto;
+     
+     margin-bottom: -800px;
+     
  }
  .girl{
      width: 100%;
-     height: 350px;
+     height: auto;
     
+    
+   
+     
  }
+ 
  .pad{
      padding: 0 !important;
  }
  .text-of-about{
     position: relative;
-    bottom: 45%;
-    color: #ffffff;
+    bottom: 75%;
+    color: #807e7e;
     margin-top: 0;
     margin-right: 0;
     letter-spacing: 0.1px;
  }
  .lorem-of-about{
     position: relative;
-    bottom: 45%;
-    color: #ffffff;
+    bottom: 75%;
+    color: #adaaaa;
     margin-left: 0;
     letter-spacing: 0.05px;
     margin-top: 15px;
@@ -645,11 +682,14 @@ margin-bottom: 0;
      margin-left: 70px;
  }
  .interior{
-     height:  570px;
+     height:  auto;
      width: 100%;
+    
  }
  .need-a-project-for-about{
      height: 400px;
+     background-color: #fff;
+     position: relative;
  }
 
 /* contact */
@@ -708,6 +748,10 @@ margin-bottom: 0;
         width: 480px;
         height: 480px;
     }
+    .woman {
+       
+        margin-bottom: -600px;
+    }
     
 
  }
@@ -719,6 +763,12 @@ margin-bottom: 0;
 
  }
  @media (min-width: 992px) and (max-width: 1199.98px) { 
+
+    .woman {
+       
+        margin-bottom: -500px;
+    }
+
      .lorem-text {
         font-size: 15.5px;
         text-align: center;
@@ -774,6 +824,23 @@ margin-bottom: 0;
     }
   }
   @media (min-width: 768px) and (max-width: 991.98px) { 
+    .woman {
+       
+        margin-bottom: -350px;
+    }
+    .main-about {
+    
+    margin-top: 40px !important;
+  
+}
+.about-for-about {
+    height: 470px;
+}
+.need-a-project-for-about {
+    height: 300px;
+    padding-top: 0 !important;
+    margin-bottom: 50px;
+}
     .forHome{height: auto !important;}
     .about{height: auto !important;}
     .up {
@@ -784,7 +851,7 @@ margin-bottom: 0;
         margin-top: 30px;
     }
     .inpCon{
-        width: 100%;
+        width: 100% ;
     }
     #video{
         width: 100%;
@@ -857,14 +924,67 @@ margin-bottom: 0;
         font-size: 20px;
         margin-top: 120px;
     }
-    .testimonials{
-        height: 400px;
-    }.circles{
+   .circles{
         margin-top: 70px;
     }
 
    }
    @media (min-width: 576px) and (max-width: 767.98px) { 
+     .nav {
+           display: none !important;
+       }
+      
+       .dropdown{
+           display: block !important;
+          
+       }
+       
+       .btn-secondary {
+       
+        background-color:unset !important; 
+        border: unset !important;
+        
+    }
+    .menu-of-header{
+        border-bottom: 3px solid #999999 !important; 
+        width: 40px;
+        margin-top: 7px;
+
+    }
+    .btn-secondary:hover .menu-of-header{
+        border-bottom: 3px solid #10c9c3 !important; 
+        
+    }
+    .btn-secondary:focus{
+        box-shadow: none !important;
+    }
+       .navigation{
+           padding-top: 30px;
+       }
+       .skills{
+           margin-top: 50px;
+           height: auto;
+           margin-bottom: 30px;
+       }
+
+    .woman {
+     
+        margin-bottom: -350px;
+    }
+    .main-about{
+        margin-top: 0px !important;
+    }
+    .main-about {
+        font-size: 25px;
+       
+    }
+    .interior {
+        height: 320px;
+       
+    }
+    .about-for-about {
+        height: 450px;
+    }
     .up {
         display: block;
        
@@ -901,14 +1021,7 @@ margin-bottom: 0;
         height: 750px;
       
     }
-    .nav {
-        
-        margin-left: 10px;
-        
-        line-height: 10px;
-        font-size: 10px;
-        
-    }
+    
     .lorem-text{
         margin-left: 0;
         font-size: 16px;
@@ -938,6 +1051,7 @@ margin-bottom: 0;
     .nnn{
         
         text-align: center;
+       
     }
     .num{
         margin-top: 120px;
@@ -992,6 +1106,21 @@ margin-bottom: 0;
 
     }
     @media  (max-width: 575.98px) { 
+        .about-for-about {
+            height: 450px;
+        }   
+        .woman {
+            
+            margin-bottom: -330px;
+            
+        }
+        .main-about{
+            margin-top: 0 !important    ;
+        }
+        .interior {
+        height: 320px;
+       
+    }
         .up {
             display: block;
             margin-top: 30px;
@@ -1029,11 +1158,7 @@ margin-bottom: 0;
         .input{
            width: 100%;
         }
-        .nav {
-            margin-left: 20px;
-            text-align: center  ;
-            
-        }
+        
         .picture{
             width: 10% !important;
         }
@@ -1100,9 +1225,10 @@ margin-bottom: 0;
         .service{
             padding-top: 0;
         }
-        .testimonials {
-            height: 600px;
-           
+        
+        .newNeed{
+            height: auto !important;
+            margin-bottom: 40px;
         }
         .logo{
             display: flex;
@@ -1121,6 +1247,14 @@ margin-bottom: 0;
             margin-left: 0;
             margin-right: 0;
         }
+        .item-of-footer{
+            padding-top: 30px;
+        }
+        .title-of-footer {
+           
+            line-height:45px;
+            
+        }
         .border1{
             width: 265px;
         }
@@ -1129,6 +1263,10 @@ margin-bottom: 0;
         }
         .border3{
             width: 225px;
+        }
+        .title-of-leaflet {
+            
+            margin-top: 100px;
         }
         .borderDark1{
             width: 132px;
@@ -1143,7 +1281,21 @@ margin-bottom: 0;
             text-align: start !important;
         }   
      }
-@media  (max-width: 430px) { 
+@media  (max-width: 430px) {
+    .text-of-about , .lorem-of-about {
+       
+        bottom: 65%;
+        
+    }   
+    .woman {
+        
+        margin-bottom: -250px;
+        
+    }
+    .main-about{
+        margin-top: 30px !important    ;
+    }
+    
     .newNeed{
         height:  auto !important;
     }
@@ -1175,13 +1327,7 @@ margin-bottom: 0;
     .main-about{
         font-size: 24px !important;
     }
-    .nav {
-        margin-top: 20px;
-
-        line-height: 10pt;
-        font-size: 8pt;
-
-    }
+    
     .main-text {
        
         line-height: 30px;
@@ -1191,7 +1337,7 @@ margin-bottom: 0;
         margin-right: 0;
     }
     .lorem-text ,  .main-about {
-        
+        text-shadow: 0px -3px 0px #fff;
         font-size: 18px;
     }
     .btn-banner{
@@ -1230,6 +1376,7 @@ margin-bottom: 0;
     }
     .numbers {
        height: auto;
+      
     }
     .nnn{
         width: 100% !important;
