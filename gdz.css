@@ -260,6 +260,11 @@ textarea {
 }
 .cell:hover::after{
     display: block;
+    
+}
+.cell:hover .thing{
+    transform: scale(1.2) ;
+    transition: transform 1s 
 }
 
 
@@ -272,28 +277,28 @@ textarea {
     
 }
 .product1{
-    width:65%;
+    width:60%;
     
   
 }
 
 .product2{
-    width:35%;
+    width:30%;
    
     margin-top: 5%;
 }
 .product3{
-    width:65%;
+    width:60%;
     
     margin-top: 5%;
 }
 .product4{
-    width:60%;
+    width:55%;
     
     
 }
 .product5 , .product6{
-    width:60%;
+    width:55%;
    
     margin-top: 10%;
     
@@ -304,7 +309,7 @@ textarea {
    text-decoration: underline black;
 }
 .product7{
-    width:50%;
+    width:45%;
   
     margin-top: 13%;
     
@@ -321,9 +326,11 @@ textarea {
 .inpCon{
     width: 48%  !important;
 }
+
 .load{
     line-height:auto;
-    
+    width: 20%;
+    margin: auto;
     color: #8e8e8e;
     letter-spacing: 1px;
     margin-top: 40px;
@@ -737,13 +744,26 @@ margin-bottom: 0;
     
 }
 /* Media */
+@media (min-width: 1900px)  { 
+    .product8{
+        padding-top: 0 !important;
+        margin-top: 0px !important;
+    }
+}
 @media (min-width: 1700px)  { 
     .cell{
+        padding-top: 5% !important;
+    }
+    .product8{
         padding-top: 0 !important;
+        margin-top: 20px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1620px) { 
-
+    .product8 {
+       
+        margin-top: 0%;
+    }
     .diary{
         width: 480px;
         height: 480px;
@@ -811,7 +831,7 @@ margin-bottom: 0;
         font-size: 9.5px;
     }
     .cell{
-        padding-top: 17%;
+        padding-top: 25%;
     }
     #video{
         width: 100%;
@@ -908,7 +928,7 @@ margin-bottom: 0;
         height: 200px;
     }
     .work{
-        height: 485px;
+        height: auto !important;
     }
     .down{
         margin-top: 30px !important;
@@ -930,6 +950,9 @@ margin-bottom: 0;
 
    }
    @media (min-width: 576px) and (max-width: 767.98px) { 
+       .load{
+           width: 30%;
+       }
      .nav {
            display: none !important;
        }
@@ -1065,8 +1088,8 @@ margin-bottom: 0;
         height: 150px;
         padding-top: 20%;
     }
-    .work {
-        height: 285px;
+    .work{
+        height: auto !important;
     }
     .lorem-about , .title-of-leaflet , .need-text , .title-of-footer{
         font-size: 15px !important;
@@ -1106,6 +1129,9 @@ margin-bottom: 0;
 
     }
     @media  (max-width: 575.98px) { 
+        .load{
+            width: 30%;
+        }
         .nav {
             display: none !important;
         }
@@ -1248,7 +1274,12 @@ margin-bottom: 0;
     height: auto;
 }
         .cell{
-            padding-bottom: 350px;
+            padding-bottom: 330px;
+            padding-top: 30px;
+        }
+        .product8{
+            padding-top: 0;
+            margin-top: 15px;
         }
         .work-process {
             height: 855px;
@@ -1313,6 +1344,9 @@ margin-bottom: 0;
         }   
      }
 @media  (max-width: 430px) {
+    .load{
+        width: 50%;
+    }
     .text-of-about , .lorem-of-about {
        
         bottom: 65%;
@@ -1367,6 +1401,7 @@ margin-bottom: 0;
         margin-top: 20px;
         margin-right: 0;
     }
+    
     .lorem-text ,  .main-about {
         text-shadow: 0px -1.8px 0px #fff;
         font-size: 18px;
@@ -1419,7 +1454,7 @@ margin-bottom: 0;
     }
     .cell {
         padding-bottom: 0;
-        padding-top: 40px;
+        padding-top: 15px;
     }
     .work-process {
         height: 850px;
